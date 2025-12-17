@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeflex - Tech & Software Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', // Slate 900/Gray 950 feel
+                            purple: '#a855f7',
+                            blue: '#3b82f6',
+                            cyan: '#06b6d4',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Gradient Animation for the Hero Text */
+        .text-gradient {
+            background: linear-gradient(to right, #a855f7, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-brand {
+            background: linear-gradient(135deg, #a855f7 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased selection:bg-purple-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 p-2">
+                    <img src="./CF-logo-dark-trans.png" class="h-16" >                                        
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Services</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">About</a>
+                    <a href="#work" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Work</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-white text-gray-950 font-bold text-sm hover:bg-gray-200 transition-all transform hover:scale-105">
+                        Start a Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-blue/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-brand-purple/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-8 backdrop-blur-sm">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span class="text-xs font-medium text-gray-300 tracking-wide uppercase">Accepting new clients</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                YESTERDAYS PROBLEMS, <br />
+                <span class="text-gradient">TOMORROW</span>
+            </h1>
+            
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-light">
+                We transform complex technical challenges into scalable software solutions. 
+                Forward-thinking consulting for the digital age.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="px-8 py-4 rounded-full bg-gradient-brand text-white font-bold text-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all">
+                    View Our Solutions
+                </button>
+                <button class="px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 transition-colors font-medium text-lg">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Expertise</h2>
+                <div class="h-1 w-20 bg-gradient-brand mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group p-8 rounded-2xl bg-gray-900 border border-white/5 hover:border-brand-blue/50 transition-all hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center mb-6 group-hover:bg-brand-blue/20 transition-colors">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Tailor-made software built with modern stacks. We code scalable architectures that grow with your business needs.
+                    </p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gray-900 border border-white/5 hover:border-brand-purple/50 transition-all hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center mb-6 group-hover:bg-brand-purple/20 transition-colors">
+                        <svg class="w-6 h-6 text-brand-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tech Consulting</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Strategic advice to navigate the digital landscape. We help you choose the right tools and optimize your workflows.
+                    </p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gray-900 border border-white/5 hover:border-brand-cyan/50 transition-all hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center mb-6 group-hover:bg-brand-cyan/20 transition-colors">
+                        <svg class="w-6 h-6 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">System Optimization</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Revamping legacy systems for speed and security. We turn yesterday's bottlenecks into tomorrow's strengths.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 bg-gray-950 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-xl tracking-wider">CODEFLEX</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2025 Codeflex AS
+            </div>            
+        </div>
+    </footer>
+
+</body>
+</html>
