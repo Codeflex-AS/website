@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Codeflex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            purple: '#a855f7',
+                            blue: '#3b82f6',
+                            cyan: '#06b6d4',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .text-gradient {
+            background: linear-gradient(to right, #a855f7, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-gradient-brand {
+            background: linear-gradient(135deg, #a855f7 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-white font-sans antialiased selection:bg-purple-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 p-2">
+                    <a href="index.html"><img src="./CF-logo-dark-trans.png" class="h-16"></a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="services.html"
+                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Services</a>
+                    <a href="about.html"
+                        class="text-white transition-colors text-sm font-medium border-b-2 border-brand-purple">About</a>
+                    <a href="work.html"
+                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Work</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="contact.html"
+                        class="px-5 py-2.5 rounded-full bg-white text-gray-950 font-bold text-sm hover:bg-gray-200 transition-all transform hover:scale-105">
+                        Start a Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-8">Engineering the <span class="text-gradient">Future</span></h1>
+                    <p class="text-xl text-gray-400 mb-6 leading-relaxed">
+                        Codeflex was founded on the principle that technical complexity shouldn't be a barrier to
+                        innovation. We bridge the gap between ambitious ideas and scalable reality.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Our team of expert consultants and engineers works at the intersection of business strategy and
+                        high-end software development. We don't just write code; we build the foundations for tomorrow's
+                        industry leaders.
+                    </p>
+                    <div class="flex gap-8 py-6 border-y border-white/10">
+                        <div>
+                            <div class="text-3xl font-bold text-brand-blue">50+</div>
+                            <div class="text-sm text-gray-500 uppercase tracking-wider">Projects Delivered</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-brand-purple">12</div>
+                            <div class="text-sm text-gray-500 uppercase tracking-wider">Expert Consultants</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-brand-cyan">100%</div>
+                            <div class="text-sm text-gray-500 uppercase tracking-wider">Client Retention</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-3xl bg-gradient-brand opacity-20 blur-3xl absolute inset-0"></div>
+                    <div class="relative bg-gray-900 border border-white/10 rounded-3xl p-8 overflow-hidden">
+                        <h3 class="text-2xl font-bold mb-4 italic">"Yesterday's problems, tomorrow."</h3>
+                        <p class="text-gray-300 font-light text-lg">
+                            We focus on solving the root causes of technical debt, ensuring that the solutions we build
+                            today remain robust and flexible as your company grows.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-950 border border-white/5">
+                    <h3 class="text-xl font-bold mb-4 text-brand-blue">Technical Excellence</h3>
+                    <p class="text-gray-400 text-sm">We never compromise on code quality. Every line we write is
+                        designed for performance and maintainability.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-950 border border-white/5">
+                    <h3 class="text-xl font-bold mb-4 text-brand-purple">Strategic Partnership</h3>
+                    <p class="text-gray-400 text-sm">We act as an extension of your team, deeply understanding your
+                        business goals before touching a keyboard.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-950 border border-white/5">
+                    <h3 class="text-xl font-bold mb-4 text-brand-cyan">Future-Proofing</h3>
+                    <p class="text-gray-400 text-sm">We build with the future in mind, selecting technologies that will
+                        scale and evolve with your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 bg-gray-950 py-12">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-xl tracking-wider">CODEFLEX</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2025 Codeflex AS
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

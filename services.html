@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Codeflex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            purple: '#a855f7',
+                            blue: '#3b82f6',
+                            cyan: '#06b6d4',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .text-gradient {
+            background: linear-gradient(to right, #a855f7, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-gradient-brand {
+            background: linear-gradient(135deg, #a855f7 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-white font-sans antialiased selection:bg-purple-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 p-2">
+                    <a href="index.html"><img src="./CF-logo-dark-trans.png" class="h-16"></a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="services.html"
+                        class="text-white transition-colors text-sm font-medium border-b-2 border-brand-blue">Services</a>
+                    <a href="about.html"
+                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">About</a>
+                    <a href="work.html"
+                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Work</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="contact.html"
+                        class="px-5 py-2.5 rounded-full bg-white text-gray-950 font-bold text-sm hover:bg-gray-200 transition-all transform hover:scale-105">
+                        Start a Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-bold mb-6">Our <span class="text-gradient">Services</span></h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    We provide end-to-end technical solutions designed to scale your business and solve complex
+                    engineering hurdles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+                <div class="space-y-6">
+                    <div class="h-2 w-12 bg-brand-blue rounded-full"></div>
+                    <h2 class="text-3xl font-bold">Custom Development</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        From web applications to complex enterprise systems, we build software that is robust, secure,
+                        and highly scalable. Our team uses the latest technology stacks to ensure your product stays
+                        ahead of the curve.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Full-stack Web Apps</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Cloud-Native Architecture</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> API Integration & Design</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="h-2 w-12 bg-brand-purple rounded-full"></div>
+                    <h2 class="text-3xl font-bold">Tech Consulting</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Navigate the ever-changing digital landscape with confidence. We provide strategic guidance on
+                        technology selection, risk assessment, and digital transformation roadmaps.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> CTO-as-a-Service</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Infrastructure Audits</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Tech Stack Migration</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="h-2 w-12 bg-brand-cyan rounded-full"></div>
+                    <h2 class="text-3xl font-bold">System Optimization</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Identify and eliminate bottlenecks in your existing systems. We specialize in performance
+                        tuning, legacy modernization, and security hardening for critical business applications.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Performance Tuning</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Database Optimization</li>
+                        <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Security Modernization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-900/40">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="p-6 rounded-xl border border-white/5 bg-gray-900">
+                    <div class="text-2xl font-bold text-brand-blue mb-2">01</div>
+                    <div class="font-semibold">Discovery</div>
+                </div>
+                <div class="p-6 rounded-xl border border-white/5 bg-gray-900">
+                    <div class="text-2xl font-bold text-brand-purple mb-2">02</div>
+                    <div class="font-semibold">Plan</div>
+                </div>
+                <div class="p-6 rounded-xl border border-white/5 bg-gray-900">
+                    <div class="text-2xl font-bold text-brand-cyan mb-2">03</div>
+                    <div class="font-semibold">Develop</div>
+                </div>
+                <div class="p-6 rounded-xl border border-white/5 bg-gray-900">
+                    <div class="text-2xl font-bold text-white mb-2">04</div>
+                    <div class="font-semibold">Deliver</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 bg-gray-950 py-12">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-xl tracking-wider">CODEFLEX</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2025 Codeflex AS
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
